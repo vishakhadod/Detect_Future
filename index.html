@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>See Your Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="stage">
+        <header class="title">SEE YOUR FUTURE</header>
+
+        <div class="card">
+            <label for="name" class="label">Enter your name</label>
+            <input id="name" type="text" placeholder="Your name..." autocomplete="off" />
+            <button id="findBtn" class="btn">Find feature</button>
+
+            <div id="resultWrap" class="result-wrap" aria-live="polite">
+                <div id="dotAnim" class="dots hidden">
+                    <span id="detectText">Detecting</span>
+                    <span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+                </div>
+                <div id="finalMessage" class="final hidden" aria-hidden="true"></div>
+            </div>
+        </div>
+
+        <footer class="credit"></footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -44,7 +44,7 @@ function runFeature() {
 
         // create video element
         const video = document.createElement('video');
-        video.src = 'video/duniya_khtam.mp4';
+        video.src = 'duniya_khtam.mp4';
         video.alt = 'Playing Your Future'; // <-- your video path
         video.autoplay = true;
         video.loop = false;
@@ -67,4 +67,5 @@ function runFeature() {
 findBtn.addEventListener('click', runFeature);
 nameInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') runFeature();
+
 });
